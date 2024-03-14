@@ -1,4 +1,5 @@
-const IconHeart = ({ filled }) => {
+import PropTypes from 'prop-types';
+const IconHeart = ({filled}) => {
   return (
     <svg
       width="40px"
@@ -11,4 +12,8 @@ const IconHeart = ({ filled }) => {
     </svg>
   );
 };
+IconHeart.propTypes = {
+  filled: PropTypes.bool.isRequired
+}
+
 export default IconHeart;
